@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+}
