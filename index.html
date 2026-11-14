@@ -13,21 +13,24 @@
 <body>
     <main>
         <div class="content">
-            <div class="content__top">
-                <h1>Что посмотреть</h1>
-                <div class="inputs">
-                    <div class="input">
-                        <label for="movieName">Название фильма</label>
-                        <input id="movieName" type="text">
+            <div class="content_el">
+                <div class="content_top">
+                    <h1>Что посмотреть</h1>
+                    <div class="inputs">
+                        <div class="input">
+                            <label for="movieName">Название фильма</label>
+                            <input id="movieName" type="text">
+                        </div>
+                        <div class="input">
+                            <label for="moviePoster">Ссылка на обложку</label>
+                            <input id="moviePoster" type="text" placeholder="https://…">
+                        </div>
+                        <button id="addMovie" type="button">Добавить</button>
                     </div>
-                    <div class="input">
-                        <label for="moviePoster">Ссылка на обложку</label>
-                        <input id="moviePoster" type="text" placeholder="https://…">
-                    </div>
-                    <button id="addMovie" type="button">Добавить</button>
+                    <ul id="movieList" class="movieList"></ul>
                 </div>
-                <ul id="movieList" class="movieList"></ul>
             </div>
         </div>
     </main>
+
 </html>

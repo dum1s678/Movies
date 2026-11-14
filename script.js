@@ -18,8 +18,10 @@ function renderMovies() {
 
   movieTitles.forEach((movieTitle, index) => {
     const item = document.createElement('li');
+    item.className = "movie_item"
 
     const poster = document.createElement('img');
+    poster.className = "movie_poster"
     poster.src = moviePosters[index];
     poster.alt = '';
     poster.width = 64;
@@ -27,8 +29,10 @@ function renderMovies() {
 
     const title = document.createElement('span');
     title.textContent = movieTitle;
+    title.className = "movie_title"
 
     const delet3 = document.createElement('button')
+    delet3.className = "delet3_button"
     delet3.textContent = 'Удалить'
     delet3.addEventListener('click', () => {
       movieTitles.splice(index, 1)
